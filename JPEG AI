@@ -1,0 +1,265 @@
+Main Objective of JPEG AI
+The goal is:
+Better Image Quality
+        at
+Lower Bitrate
+using
+Artificial Intelligence
+
+JPEG AI targets:
+Human visual quality
+Very high compression ratios
+AI-native multimedia systems
+
+Why JPEG AI Was Developed
+Traditional image codecs use:
+DCT transforms
+Quantization
+Entropy coding
+Examples:
+JPEG
+HEVC intra coding
+AV1 intra coding
+
+These are mathematically designed systems.
+JPEG AI instead uses:
+Learned neural networks
+Data-driven optimization
+End-to-end training
+
+Basic JPEG AI Framework
+A simplified framework:
+Input Image
+      ↓
+Neural Encoder
+      ↓
+Latent Representation
+      ↓
+Quantization
+      ↓
+Entropy Coding
+      ↓
+Bitstream
+      ↓
+Entropy Decoding
+      ↓
+Neural Decoder
+      ↓
+Reconstructed Image
+
+Core Components
+1. Neural Encoder
+
+Usually based on:
+CNNs
+Transformers
+Autoencoders
+
+Purpose:
+Extract compact latent representation
+
+2. Latent Space Representation
+Instead of transform coefficients:
+Learned latent features are transmitted
+
+These features represent:
+Texture
+Edges
+Semantics
+Perceptual structures
+
+3. Quantization
+Latent features are quantized to reduce bitrate.
+Research challenge:
+Differentiable quantization during training
+
+4. Entropy Coding
+Still needed for lossless bitstream compression.
+
+Methods:
+Arithmetic coding
+Context models
+Hyperpriors
+Learned entropy models
+
+5. Neural Decoder
+
+Reconstructs image using:
+CNN decoder
+Transformer decoder
+Generative reconstruction
+
+Key Technologies in JPEG AI
+| Technology       | Role                   |
+| ---------------- | ---------------------- |
+| CNN              | Feature extraction     |
+| Autoencoder      | Compression            |
+| Hyperprior       | Entropy estimation     |
+| Transformer      | Long-range dependency  |
+| GAN              | Perceptual enhancement |
+| Diffusion Models | Emerging research      |
+
+Comparison with Classical JPEG
+| Feature                | JPEG          | JPEG AI         |
+| ---------------------- | ------------- | --------------- |
+| Core Method            | DCT           | Neural networks |
+| Feature Extraction     | Hand-designed | Learned         |
+| Optimization           | Mathematical  | Data-driven     |
+| Blocking Artifacts     | Common        | Much lower      |
+| Compression Efficiency | Moderate      | Very high       |
+| Perceptual Quality     | Limited       | Better          |
+| Complexity             | Low           | High            |
+
+Relationship with HEVC/AV1 Intra Coding
+Modern video codecs already use:
+Advanced prediction
+Large transforms
+Adaptive filtering
+
+JPEG AI goes further by:
+Replacing almost entire coding pipeline with neural learning.
+
+Main Research Areas
+A. End-to-End Learned Compression
+Entire codec jointly optimized.
+
+Loss function:
+L=R+λD
+Where:
+R = bitrate
+D = distortion
+
+B. Perceptual Optimization
+
+Optimize:
+Human visual quality
+instead of only PSNR.
+
+Metrics:
+MS-SSIM
+LPIPS
+VMAF-like perceptual models
+
+C. Learned Entropy Models
+Neural probability estimation improves coding efficiency.
+
+D. Semantic Compression
+
+Transmit:
+Important visual meaning
+instead of exact pixels.
+Future-oriented research.
+
+JPEG AI Architecture Categories
+1. CNN-Based
+Most common today.
+
+2. Transformer-Based
+Better global dependency modeling.
+
+3. GAN-Based
+Improved perceptual realism.
+
+4. Hybrid Architectures
+Combine:
+CNN
+Transformer
+Attention modules
+
+Compression Pipeline Example
+Image
+ ↓
+CNN Encoder
+ ↓
+Latent Tensor
+ ↓
+Hyperprior Entropy Model
+ ↓
+Arithmetic Coding
+ ↓
+Bitstream
+
+Advantages
+1. Higher Compression Efficiency
+Can outperform:
+JPEG
+JPEG2000
+WebP
+HEVC intra coding 
+     in perceptual quality.
+
+2. Better Visual Quality
+Especially:
+Texture preservation
+Reduced artifacts
+Better low-bitrate appearance
+
+3. Content Adaptation
+
+Can learn:
+Medical images
+Satellite imagery
+Gaming textures
+Facial images
+
+Challenges
+1. High Computational Complexity
+Requires:
+GPUs
+NPUs
+
+2. Hardware Deployment
+Still difficult for:
+Embedded devices
+Mobile hardware
+
+3. Standardization Complexity
+Neural network interoperability is challenging.
+
+4. Generalization
+
+Different image types may require retraining.
+
+Applications
+| Application       | Benefit               |
+| ----------------- | --------------------- |
+| OTT streaming     | Lower bandwidth       |
+| Medical imaging   | Better quality        |
+| Satellite imaging | Efficient storage     |
+| Automotive vision | Real-time compression |
+| Cloud gaming      | Texture optimization  |
+| Smartphones       | Better image storage  |
+
+Related Standards and Technologies
+| Standard   | Type                   |
+| ---------- | ---------------------- |
+| JPEG       | Classical DCT          |
+| JPEG2000   | Wavelet                |
+| JPEG XL    | Modern hybrid          |
+| JPEG AI    | Neural compression     |
+| HEVC intra | Video intra coding     |
+| AV1 intra  | Advanced hybrid coding |
+
+Industry Trends
+Companies researching neural image compression:
+Google
+Meta
+NVIDIA
+Huawei
+Microsoft
+
+Future Direction
+JPEG AI represents movement toward:
+Neural multimedia coding
+Generative compression
+Semantic communication
+AI-native media systems
+
+Future codecs may combine:
+Neural image coding
+Neural video coding
+AI enhancement
+Edge AI streaming
+
+JPEG AI is a deep learning–based image compression framework that replaces traditional transform-based coding with neural network–based end-to-end learned compression 
+for achieving higher perceptual quality at lower bitrates.
